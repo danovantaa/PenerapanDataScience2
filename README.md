@@ -71,12 +71,12 @@ Prototype ini telah disiapkan untuk melakukan prediksi berdasarkan model yang te
 `streamlit run app.py`
   <img width="890" alt="Screenshot 2025-02-10 at 14 53 27" src="https://github.com/user-attachments/assets/6ab3f54f-7dd1-42b6-b7c6-bcbc343dd7ef" />
 
-Selain itu, juga dapat mengakses prototype melalui tautan berikut: [Prototype Machine Learning](https://penerapandatascience2-g86gjaa3wdu7fyam5jpn6i.streamlit.app/)
+Selain itu, juga dapat mengakses prototype melalui tautan berikut: [Prototype Machine Learning](https://penerapandatascience2-bet.streamlit.app/)
 
 ## Conclusion
 
 1. Bagaimana metode yang dapat digunakan untuk mendeteksi sejak dini mahasiswa yang berisiko mengalami dropout ?
-* **Jawaban :** Dengan mengembangkan model prediktif menggunakan algoritma seperti Random Forest, Jaya Jaya Institut dapat mendeteksi siswa yang berisiko mengalami dropout sejak awal. Model ini dapat mengidentifikasi siswa berisiko dengan tingkat akurasi yang cukup baik berdasarkan data historis serta faktor-faktor demografis, akademik, dan ekonomi.
+* **Jawaban :** Dengan mengembangkan model prediktif menggunakan algoritma seperti Random Forest, Desesion Tree maupun algoritma XGBoost, Jaya Jaya Institut dapat mendeteksi siswa yang berisiko mengalami dropout sejak awal. Model ini dapat mengidentifikasi siswa berisiko dengan tingkat akurasi yang cukup baik berdasarkan data historis serta faktor-faktor demografis, akademik, dan ekonomi.
   
 2. Faktor apa saja yang memiliki pengaruh terbesar terhadap keputusan mahasiswa untuk berhenti kuliah?
 - **Jawaban :** Analisis korelasi dan kontribusi fitur dalam model prediktif mengungkapkan bahwa beberapa faktor utama yang mempengaruhi keputusan siswa untuk dropout antara lain latar belakang akademik (seperti nilai dan jumlah mata kuliah yang diambil) serta kondisi ekonomi (seperti beasiswa atau status displaced). Sebagai contoh, siswa yang mengalami kesulitan akademik pada semester pertama atau kedua cenderung memiliki kemungkinan lebih besar untuk dropout.
@@ -84,7 +84,7 @@ Selain itu, juga dapat mengakses prototype melalui tautan berikut: [Prototype Ma
   <img width="1049" alt="Screenshot 2025-02-10 at 14 52 28" src="https://github.com/user-attachments/assets/dd34f9bf-e919-4000-ba48-95d187b70eb7" />
 
 3. Langkah apa yang dapat diterapkan untuk meningkatkan tingkat retensi mahasiswa dan mendorong lebih banyak mahasiswa menyelesaikan studinya?
-- **Jawaban : ** erdasarkan temuan dari model dan analisis data, Jaya Jaya Institut dapat meningkatkan tingkat retensi siswa dengan menerapkan beberapa strategi, seperti menawarkan bimbingan akademik yang lebih intensif, menyesuaikan kurikulum untuk mengurangi beban belajar siswa, dan memberikan dukungan finansial ekstra bagi siswa yang membutuhkan. Intervensi yang lebih awal dan berbasis data akan membantu memastikan lebih banyak siswa berhasil menyelesaikan pendidikan mereka.
+- **Jawaban :** erdasarkan temuan dari model dan analisis data, Jaya Jaya Institut dapat meningkatkan tingkat retensi siswa dengan menerapkan beberapa strategi, seperti menawarkan bimbingan akademik yang lebih intensif, menyesuaikan kurikulum untuk mengurangi beban belajar siswa, dan memberikan dukungan finansial ekstra bagi siswa yang membutuhkan. Intervensi yang lebih awal dan berbasis data akan membantu memastikan lebih banyak siswa berhasil menyelesaikan pendidikan mereka.
 
 ### Rekomendasi Action Items
 
