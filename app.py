@@ -3,8 +3,8 @@ import joblib
 import numpy as np
 
 # Load the trained model
-model = joblib.load('./model/rdf_model.joblib')
-scaler = joblib.load('./model/scaler.pkl')
+model = joblib.load('model/gboost_model.joblib')
+scaler = joblib.load('model/scaler.pkl')
 
 # Function to make predictions
 def predict_status(inputs):
@@ -15,7 +15,7 @@ def predict_status(inputs):
     return prediction
 
 # Streamlit UI
-st.title('Prediksi Status Mahasiswa')
+st.title('Student Dropout Prediction')
 
 # Input fields for user to input data
 curricular_units_2nd_sem_approved = st.number_input('Curricular Units 2nd Semester Approved', min_value=0, max_value=30, value=15)
@@ -44,17 +44,22 @@ input_data = [
 ]
 
 # Button for prediction
-if st.button('Mulai prediksi'):
+if st.button('Predict'):
     prediction = predict_status(input_data)
 
-    # The prediction will be a 2D array where each column corresponds to one of the classes
+    # The prediction will be a 1D array or 2D array depending on model
     status_dict = {
         0: 'Dropout',
         1: 'Enrolled',
         2: 'Graduate'
     }
-    # Find the index of the maximum predicted value
-    predicted_status_index = np.argmax(prediction, axis=1)[0]
+
+    # Check if prediction is 1D or 2D and adjust accordingly
+    if prediction.ndim == 1:
+        predicted_status_index = np.argmax(prediction)
+    else:
+        predicted_status_index = np.argmax(prediction, axis=1)[0]
+
     predicted_status = status_dict[predicted_status_index]
 
-    st.write(f"Hasil Prediksi Model : **{predicted_status}**")
+    st.write(f"The model predicts that the student is likely to be: **{predicted_status}**")
