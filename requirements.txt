@@ -56,7 +56,7 @@ namex==0.0.8
 narwhals==1.24.1
 nbformat==5.10.4
 nest-asyncio==1.6.0
-numpy==1.26.4
+numpy==2.0.2
 opendatasets==0.1.22
 opt_einsum==3.4.0
 optree==0.14.0
