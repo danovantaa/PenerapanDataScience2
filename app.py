@@ -15,7 +15,7 @@ def predict_status(inputs):
     return prediction
 
 # Streamlit UI
-st.title('Student Dropout Prediction')
+st.title('Prediksi Status Mahasiswa')
 
 # Input fields for user to input data
 curricular_units_2nd_sem_approved = st.number_input('Curricular Units 2nd Semester Approved', min_value=0, max_value=30, value=15)
@@ -44,7 +44,7 @@ input_data = [
 ]
 
 # Button for prediction
-if st.button('Predict'):
+if st.button('Mulai Prediksi '):
     prediction = predict_status(input_data)
 
     # The prediction will be a 1D array or 2D array depending on model
@@ -62,4 +62,4 @@ if st.button('Predict'):
 
     predicted_status = status_dict[predicted_status_index]
 
-    st.write(f"The model predicts that the student is likely to be: **{predicted_status}**")
+    st.write(f"Hasil Prediksi : **{predicted_status}**")
